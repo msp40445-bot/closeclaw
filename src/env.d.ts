@@ -1,5 +1,7 @@
 /// <reference types="vite/client" />
 
+export {}
+
 interface CloseclawAPI {
   llm: {
     getStatus: () => Promise<{ status: string; error: string | null }>
