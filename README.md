@@ -5,9 +5,14 @@ A private, local AI assistant for macOS. Runs entirely on-device with Metal GPU 
 ## Prerequisites
 
 - **macOS** (Apple Silicon M1/M2/M3 recommended, Intel also supported)
-- **Node.js 20+** — install via [nvm](https://github.com/nvm-sh/nvm) or [Homebrew](https://brew.sh):
+- **Node.js 22+** — install via [nvm](https://github.com/nvm-sh/nvm) or [Homebrew](https://brew.sh):
   ```bash
-  brew install node@20
+  brew install node@22
+  ```
+  If you already have another Node version linked, make sure Node 22 is in your PATH:
+  ```bash
+  echo 'export PATH="/opt/homebrew/opt/node@22/bin:$PATH"' >> ~/.zshrc
+  source ~/.zshrc
   ```
 - **CMake** (required to build the AI engine):
   ```bash
